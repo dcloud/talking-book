@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FEBB4EE1BA3D78E0086E328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB4ED1BA3D78E0086E328 /* AppDelegate.swift */; };
+		2FEBB4F01BA3D78E0086E328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB4EF1BA3D78E0086E328 /* ViewController.swift */; };
+		2FEBB4F21BA3D78E0086E328 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB4F11BA3D78E0086E328 /* Document.swift */; };
+		2FEBB4F41BA3D78E0086E328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEBB4F31BA3D78E0086E328 /* Assets.xcassets */; };
+		2FEBB4F71BA3D78E0086E328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEBB4F51BA3D78E0086E328 /* Main.storyboard */; };
+		2FEBB5021BA3D78E0086E328 /* TalkingBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB5011BA3D78E0086E328 /* TalkingBookTests.swift */; };
+		2FEBB50D1BA3D78E0086E328 /* TalkingBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB50C1BA3D78E0086E328 /* TalkingBookUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FEBB4FE1BA3D78E0086E328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FEBB4E21BA3D78E0086E328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FEBB4E91BA3D78E0086E328;
+			remoteInfo = TalkingBook;
+		};
+		2FEBB5091BA3D78E0086E328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FEBB4E21BA3D78E0086E328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FEBB4E91BA3D78E0086E328;
+			remoteInfo = TalkingBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FEBB4EA1BA3D78E0086E328 /* TalkingBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkingBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEBB4ED1BA3D78E0086E328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FEBB4EF1BA3D78E0086E328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FEBB4F11BA3D78E0086E328 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		2FEBB4F31BA3D78E0086E328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FEBB4F61BA3D78E0086E328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FEBB4F81BA3D78E0086E328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FEBB4FD1BA3D78E0086E328 /* TalkingBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkingBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEBB5011BA3D78E0086E328 /* TalkingBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkingBookTests.swift; sourceTree = "<group>"; };
+		2FEBB5031BA3D78E0086E328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FEBB5081BA3D78E0086E328 /* TalkingBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkingBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEBB50C1BA3D78E0086E328 /* TalkingBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkingBookUITests.swift; sourceTree = "<group>"; };
+		2FEBB50E1BA3D78E0086E328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FEBB4E71BA3D78E0086E328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEBB4FA1BA3D78E0086E328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEBB5051BA3D78E0086E328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FEBB4E11BA3D78E0086E328 = {
+			isa = PBXGroup;
+			children = (
+				2FEBB4EB1BA3D78E0086E328 /* Products */,
+				2FEBB51B1BA3DA860086E328 /* Resources */,
+				2FEBB4EC1BA3D78E0086E328 /* Source */,
+				2FEBB51A1BA3D9CE0086E328 /* Storyboards */,
+				2FEBB5001BA3D78E0086E328 /* TalkingBookTests */,
+				2FEBB50B1BA3D78E0086E328 /* TalkingBookUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		2FEBB4EB1BA3D78E0086E328 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB4EA1BA3D78E0086E328 /* TalkingBook.app */,
+				2FEBB4FD1BA3D78E0086E328 /* TalkingBookTests.xctest */,
+				2FEBB5081BA3D78E0086E328 /* TalkingBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FEBB4EC1BA3D78E0086E328 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB4ED1BA3D78E0086E328 /* AppDelegate.swift */,
+				2FEBB4F11BA3D78E0086E328 /* Document.swift */,
+				2FEBB4EF1BA3D78E0086E328 /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2FEBB5001BA3D78E0086E328 /* TalkingBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB5031BA3D78E0086E328 /* Info.plist */,
+				2FEBB5011BA3D78E0086E328 /* TalkingBookTests.swift */,
+			);
+			path = TalkingBookTests;
+			sourceTree = "<group>";
+		};
+		2FEBB50B1BA3D78E0086E328 /* TalkingBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB50E1BA3D78E0086E328 /* Info.plist */,
+				2FEBB50C1BA3D78E0086E328 /* TalkingBookUITests.swift */,
+			);
+			path = TalkingBookUITests;
+			sourceTree = "<group>";
+		};
+		2FEBB51A1BA3D9CE0086E328 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB4F51BA3D78E0086E328 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2FEBB51B1BA3DA860086E328 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB4F31BA3D78E0086E328 /* Assets.xcassets */,
+				2FEBB4F81BA3D78E0086E328 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FEBB4E91BA3D78E0086E328 /* TalkingBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FEBB5111BA3D78E0086E328 /* Build configuration list for PBXNativeTarget "TalkingBook" */;
+			buildPhases = (
+				2FEBB4E61BA3D78E0086E328 /* Sources */,
+				2FEBB4E71BA3D78E0086E328 /* Frameworks */,
+				2FEBB4E81BA3D78E0086E328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkingBook;
+			productName = TalkingBook;
+			productReference = 2FEBB4EA1BA3D78E0086E328 /* TalkingBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FEBB4FC1BA3D78E0086E328 /* TalkingBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FEBB5141BA3D78E0086E328 /* Build configuration list for PBXNativeTarget "TalkingBookTests" */;
+			buildPhases = (
+				2FEBB4F91BA3D78E0086E328 /* Sources */,
+				2FEBB4FA1BA3D78E0086E328 /* Frameworks */,
+				2FEBB4FB1BA3D78E0086E328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FEBB4FF1BA3D78E0086E328 /* PBXTargetDependency */,
+			);
+			name = TalkingBookTests;
+			productName = TalkingBookTests;
+			productReference = 2FEBB4FD1BA3D78E0086E328 /* TalkingBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FEBB5071BA3D78E0086E328 /* TalkingBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FEBB5171BA3D78E0086E328 /* Build configuration list for PBXNativeTarget "TalkingBookUITests" */;
+			buildPhases = (
+				2FEBB5041BA3D78E0086E328 /* Sources */,
+				2FEBB5051BA3D78E0086E328 /* Frameworks */,
+				2FEBB5061BA3D78E0086E328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FEBB50A1BA3D78E0086E328 /* PBXTargetDependency */,
+			);
+			name = TalkingBookUITests;
+			productName = TalkingBookUITests;
+			productReference = 2FEBB5081BA3D78E0086E328 /* TalkingBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FEBB4E21BA3D78E0086E328 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Daniel Cloud";
+				TargetAttributes = {
+					2FEBB4E91BA3D78E0086E328 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = X3VH24T4Q8;
+					};
+					2FEBB4FC1BA3D78E0086E328 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 2FEBB4E91BA3D78E0086E328;
+					};
+					2FEBB5071BA3D78E0086E328 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 2FEBB4E91BA3D78E0086E328;
+					};
+				};
+			};
+			buildConfigurationList = 2FEBB4E51BA3D78E0086E328 /* Build configuration list for PBXProject "TalkingBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FEBB4E11BA3D78E0086E328;
+			productRefGroup = 2FEBB4EB1BA3D78E0086E328 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FEBB4E91BA3D78E0086E328 /* TalkingBook */,
+				2FEBB4FC1BA3D78E0086E328 /* TalkingBookTests */,
+				2FEBB5071BA3D78E0086E328 /* TalkingBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FEBB4E81BA3D78E0086E328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBB4F41BA3D78E0086E328 /* Assets.xcassets in Resources */,
+				2FEBB4F71BA3D78E0086E328 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEBB4FB1BA3D78E0086E328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEBB5061BA3D78E0086E328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FEBB4E61BA3D78E0086E328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBB4F01BA3D78E0086E328 /* ViewController.swift in Sources */,
+				2FEBB4EE1BA3D78E0086E328 /* AppDelegate.swift in Sources */,
+				2FEBB4F21BA3D78E0086E328 /* Document.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEBB4F91BA3D78E0086E328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBB5021BA3D78E0086E328 /* TalkingBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEBB5041BA3D78E0086E328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBB50D1BA3D78E0086E328 /* TalkingBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FEBB4FF1BA3D78E0086E328 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FEBB4E91BA3D78E0086E328 /* TalkingBook */;
+			targetProxy = 2FEBB4FE1BA3D78E0086E328 /* PBXContainerItemProxy */;
+		};
+		2FEBB50A1BA3D78E0086E328 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FEBB4E91BA3D78E0086E328 /* TalkingBook */;
+			targetProxy = 2FEBB5091BA3D78E0086E328 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FEBB4F51BA3D78E0086E328 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FEBB4F61BA3D78E0086E328 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FEBB50F1BA3D78E0086E328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FEBB5101BA3D78E0086E328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2FEBB5121BA3D78E0086E328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.danielcloud.TalkingBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2FEBB5131BA3D78E0086E328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.danielcloud.TalkingBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2FEBB5151BA3D78E0086E328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TalkingBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.danielcloud.TalkingBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkingBook.app/Contents/MacOS/TalkingBook";
+			};
+			name = Debug;
+		};
+		2FEBB5161BA3D78E0086E328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TalkingBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.danielcloud.TalkingBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalkingBook.app/Contents/MacOS/TalkingBook";
+			};
+			name = Release;
+		};
+		2FEBB5181BA3D78E0086E328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TalkingBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.danielcloud.TalkingBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TalkingBook;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2FEBB5191BA3D78E0086E328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TalkingBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.danielcloud.TalkingBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TalkingBook;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FEBB4E51BA3D78E0086E328 /* Build configuration list for PBXProject "TalkingBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBB50F1BA3D78E0086E328 /* Debug */,
+				2FEBB5101BA3D78E0086E328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FEBB5111BA3D78E0086E328 /* Build configuration list for PBXNativeTarget "TalkingBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBB5121BA3D78E0086E328 /* Debug */,
+				2FEBB5131BA3D78E0086E328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FEBB5141BA3D78E0086E328 /* Build configuration list for PBXNativeTarget "TalkingBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBB5151BA3D78E0086E328 /* Debug */,
+				2FEBB5161BA3D78E0086E328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FEBB5171BA3D78E0086E328 /* Build configuration list for PBXNativeTarget "TalkingBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBB5181BA3D78E0086E328 /* Debug */,
+				2FEBB5191BA3D78E0086E328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FEBB4E21BA3D78E0086E328 /* Project object */;
+}
