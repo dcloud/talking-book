@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F3F5C2E1BA4ED4D00505421 /* XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F5C2D1BA4ED4D00505421 /* XML.swift */; };
+		2F3F5C301BA4ED8100505421 /* XMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F5C2F1BA4ED8100505421 /* XMLTests.swift */; };
 		2FEBB4EE1BA3D78E0086E328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB4ED1BA3D78E0086E328 /* AppDelegate.swift */; };
 		2FEBB4F01BA3D78E0086E328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB4EF1BA3D78E0086E328 /* ViewController.swift */; };
 		2FEBB4F21BA3D78E0086E328 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB4F11BA3D78E0086E328 /* Document.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F3F5C2D1BA4ED4D00505421 /* XML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XML.swift; sourceTree = "<group>"; };
+		2F3F5C2F1BA4ED8100505421 /* XMLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLTests.swift; sourceTree = "<group>"; };
 		2FEBB4EA1BA3D78E0086E328 /* TalkingBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkingBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEBB4ED1BA3D78E0086E328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FEBB4EF1BA3D78E0086E328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 				2FEBB4ED1BA3D78E0086E328 /* AppDelegate.swift */,
 				2FEBB4F11BA3D78E0086E328 /* Document.swift */,
 				2FEBB4EF1BA3D78E0086E328 /* ViewController.swift */,
+				2F3F5C2D1BA4ED4D00505421 /* XML.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			children = (
 				2FEBB5031BA3D78E0086E328 /* Info.plist */,
 				2FEBB5011BA3D78E0086E328 /* TalkingBookTests.swift */,
+				2F3F5C2F1BA4ED8100505421 /* XMLTests.swift */,
 			);
 			path = TalkingBookTests;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FEBB4F01BA3D78E0086E328 /* ViewController.swift in Sources */,
+				2F3F5C2E1BA4ED4D00505421 /* XML.swift in Sources */,
 				2FEBB4EE1BA3D78E0086E328 /* AppDelegate.swift in Sources */,
 				2FEBB4F21BA3D78E0086E328 /* Document.swift in Sources */,
 			);
@@ -282,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FEBB5021BA3D78E0086E328 /* TalkingBookTests.swift in Sources */,
+				2F3F5C301BA4ED8100505421 /* XMLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
