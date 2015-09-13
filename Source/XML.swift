@@ -8,9 +8,13 @@
 
 import Foundation
 
+protocol StringSerializable: CustomStringConvertible {
+    func toString() -> String
+}
+
 public typealias AttributeDictionary = [String: CustomStringConvertible]
 
-public class XMLElement: NSObject {
+public class XMLElement: StringSerializable {
     let name: String
     public private(set) weak var parent: XMLElement?
     public var children: [XMLElement] = [XMLElement]()
@@ -62,6 +66,41 @@ public class XMLElement: NSObject {
         
         content.append("</\(name)>")
         return content.joinWithSeparator("")
+    }
+    
+    public var description: String {
+        get {
+            return toString()
+        }
+    }
+}
+
+public class XMLDocument: StringSerializable {
+    let version: Float
+    let docType: String?
+    
+    var root: XMLElement
+    
+    public init(_ root: XMLElement, version: Float, docType:String? = nil) {
+        self.root = root
+        self.version = version
+        self.docType = docType
+    }
+    
+    public var description: String {
+        get {
+            return toString()
+        }
+    }
+    
+    public func toString() -> String {
+        var xmlString =  "<?xml version=\"\(version)\"?>"
+        if let docType = self.docType {
+            xmlString += "<!DOCTYPE \(docType)>"
+        }
+        xmlString += root.toString()
+
+        return xmlString
     }
     
 }

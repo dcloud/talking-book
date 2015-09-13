@@ -48,6 +48,7 @@ class XMLTests: XCTestCase {
         let root = XMLElement("root", attributes: ["id": 1])
         let body = XMLElement("body", textContent: "Hello World!")
         root.addChild(body)
+        let doc = XMLDocument(root, version: 1.0)
         
         for i in 1..<5 {
             let el = XMLElement("p", textContent: "\(i): All work and no play makes Daniel something something.")
@@ -55,7 +56,31 @@ class XMLTests: XCTestCase {
         }
         
         XCTAssertGreaterThan(root.children.count, 0)
-        XCTAssertEqual(root.toString(), "<root id=\"1\"><body>Hello World!<p>1: All work and no play makes Daniel something something.</p><p>2: All work and no play makes Daniel something something.</p><p>3: All work and no play makes Daniel something something.</p><p>4: All work and no play makes Daniel something something.</p></body></root>")
+        XCTAssertEqual(doc.toString(), "<?xml version=\"1.0\"?><root id=\"1\"><body>Hello World!<p>1: All work and no play makes Daniel something something.</p><p>2: All work and no play makes Daniel something something.</p><p>3: All work and no play makes Daniel something something.</p><p>4: All work and no play makes Daniel something something.</p></body></root>")
+    }
+    
+    func testXMLtoNSXMLDocument() {
+        let root = XMLElement("root", attributes: ["id": 1])
+        let body = XMLElement("body", textContent: "Hello World!")
+        root.addChild(body)
+        let doc = XMLDocument(root, version: 1.0)
+        
+        for i in 1..<5 {
+            let el = XMLElement("p", textContent: "\(i): All work and no play makes Daniel something something.")
+            body.addChild(el)
+        }
+        
+        let xmlDocument: NSXMLDocument? = try? NSXMLDocument(XMLString: doc.toString(), options: Int(NSXMLDocumentContentKind.XMLKind.rawValue))
+        
+        XCTAssertNotNil(xmlDocument)
+        
+        if let xmlDocument = xmlDocument {
+            do {
+                try xmlDocument.validate()
+            } catch {
+                XCTFail()
+            }
+        }
     }
 
 }
