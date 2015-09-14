@@ -18,7 +18,7 @@ protocol DOMStringSerializable {
     func toString() -> String
 }
 
-public typealias AttributeDictionary = [String: Any]
+public typealias AttributeDictionary = [String: String]
 
 public class XMLElement: DOMStringSerializable, CustomStringConvertible {
     public let name: String
@@ -30,13 +30,13 @@ public class XMLElement: DOMStringSerializable, CustomStringConvertible {
     
     public var attributeString: String {
         get {
-            var attrString = self.attributes.map { (key: String, value: Any) in
-                return value is CustomStringConvertible ? "\(key)=\"\(value)\"" : ""
+            let attrStrings: [String] = self.attributes.map { (key: String, value: String) in
+                return "\(key)=\"\(value)\""
             }
-            .filter { (v: String) -> Bool in
-                v.isEmpty == false
-            }
-            .joinWithSeparator(" ")
+            
+            var attrString = attrStrings.filter { (v: String) -> Bool in
+                return v.isEmpty == false
+            }.joinWithSeparator(" ")
             
             if attrString.isEmpty == false {
                 attrString = " " + attrString

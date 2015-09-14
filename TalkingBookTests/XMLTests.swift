@@ -23,7 +23,7 @@ class XMLTests: XCTestCase {
 
     func testXMLAttributes() {
         // Test XMLElement attributes
-        let doc = XMLElement("root", attributes: ["id": 1, "name": "foo"])
+        let doc = XMLElement("root", attributes: ["id": "1", "name": "foo"])
         
         XCTAssertTrue(doc.attributeString.containsString("name=\"foo\""))
         XCTAssertFalse(doc.attributeString.containsString("name=foo"))
@@ -60,7 +60,7 @@ class XMLTests: XCTestCase {
     }
     
     func testXMLToString() {
-        let root = XMLElement("root", attributes: ["id": 1])
+        let root = XMLElement("root", attributes: ["id": "1"])
         let body = XMLElement("body", textContent: "Hello World!")
         root.addChild(body)
         let doc = XMLDocument(root, version: 1.0)
@@ -75,7 +75,7 @@ class XMLTests: XCTestCase {
     }
     
     func testXMLtoNSXMLDocument() {
-        let root = XMLElement("root", attributes: ["id": 1])
+        let root = XMLElement("root", attributes: ["id": "1"])
         let body = XMLElement("body", textContent: "Hello World!")
         root.addChild(body)
         let doc = XMLDocument(root, version: 1.0)
@@ -152,11 +152,21 @@ class SMILXMLTests: XCTestCase {
         
         let body = XMLElement("body")
         let mainSeq = XMLElement("seq", attributes: ["dur": "1.3s"])
+        
+        let par = XMLElement("par", attributes: ["endsync": "last"])
+        let textNode = XMLElement("text", attributes: ["id": "h1", "src": "ncc.html#h1"])
+        par.children = [textNode]
+        mainSeq.addChild(par)
+        
+        let audioNode = XMLElement("audio", attributes: ["src": "audio1.mp3", "id": "audio1"], selfClosing: true)
+        textNode.addChild(audioNode)
+        
+        
         body.addChild(mainSeq)
         
         XCTAssertEqual(body.children.count, 1)
         XCTAssertEqual(body.children[0].name, "seq")
-        if let dur: String = body.children[0].attributes["dur"] as? String {
+        if let dur: String = body.children[0].attributes["dur"] {
             XCTAssertEqual(dur, "1.3s")
         }
         
@@ -166,6 +176,10 @@ class SMILXMLTests: XCTestCase {
             
             XCTAssertNotEqual(smilDoc.toString(), "")
             
+            print(smilDoc)
+            
+            XCTAssert(smilDoc.toString().containsString("<text id=\"h1\" src=\"ncc.html#h1\">"))
+            XCTAssert(smilDoc.toString().containsString("<audio src=\"audio1.mp3\" id=\"audio1\" />"))
 
 //            let xmlDocument: NSXMLDocument? = try? NSXMLDocument(XMLString: smilDoc.toString(), options: Int(NSXMLDocumentContentKind.XMLKind.rawValue))
             
